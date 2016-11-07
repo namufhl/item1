@@ -1,0 +1,303 @@
+#banner{
+	width:100%;
+	overflow: hidden;
+}
+.banner{
+	width: 1263px;
+	overflow: hidden;
+	height: 303px;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	height: 303px;
+	display: block;
+}
+.banner a{
+	width: 100%;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.banner .show{
+	display: block;
+}
+.banner ul{
+ 	position: absolute;
+	right: 85px;
+	bottom: 17px;
+ }
+ .banner ul li{
+ 	width:10px;
+ 	height: 10px;
+ 	border: 3px solid #fff;
+ 	border-radius: 50%;
+ 	list-style: none;
+ 	float: left;
+ 	margin-right: 7px;
+ }
+ .banner ul .act{
+ 	background: #fff;
+ }
+ .banner p{
+	width: 60px;
+	height: 60px;
+	background: #000000;
+	color: #fff;
+	opacity: 0.4;
+	position: absolute;
+	bottom: 125px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 36px;
+	border-radius: 50%;
+	font-weight:inherit;
+	display: none;
+	cursor: pointer;
+}
+ 
+.banLeft{
+	left: 41px;
+}
+.banRight{
+	right: 41px;
+}
+#main{
+	width:100%;
+	overflow: hidden;
+}
+.main{
+	width:1272px;
+	
+}
+.main .mainCon{
+	width: 250px;
+	margin: 30px auto;
+	height:42px;
+	border: 1px solid #e10482;
+	border-radius: 7px;
+}
+.main .mainCon span{
+	display: inline-block;
+	width: 125px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 18px;
+}
+.main .mainCon .mainConLeft{
+	background: #e10482;
+	color: #fff;
+}
+.main .mainCon .mainConRight{
+	background: #fff;
+	color: #000;
+}
+#concent{
+	width:100%;
+	background: #f5f5f5;
+	overflow: hidden;
+	padding-bottom: 40px;
+}
+#concent .concentnode{
+	display: none;
+	}
+
+#concent1{
+	width:1200px;
+	margin-left: 32px;
+}
+#concent1 dl{
+	width:385px;
+	margin: 20px 10px 20px 0;
+	float:left;
+	position: relative;
+    height: 424px;
+   box-shadow: 1px 1px 1px #ccc;
+   background: #fff;
+}
+#concent1 dl dt{
+	width:385px;
+	height: 240px;
+	text-align: center;
+	background: #fff;
+	border-bottom: #EEEEEE solid 1px;
+}
+#concent1 dl dt img{
+	width: 120px;
+	height: 200px;
+	margin-top: 20px;
+}
+#concent1 dl dd{
+	background: #fff;
+	margin-left: 20px;
+	height: 170px;
+	
+	
+}
+#concent1 dl dd h5{
+	width: 100%;
+	vertical-align: middle;
+	font-size: 12px;
+	margin: 10px 0;
+	font-weight: 100;
+	
+}
+
+#concent1 dl dd h5 span{
+	display: inline-block;
+	width: 27px;
+	height: 25px;
+	margin-right: 9px;
+	vertical-align: middle;
+}
+#concent1 dl dd h5 span img{
+	width: 100%;
+	vertical-align: middle;
+}
+#concent1 h3{
+	font-size: 20px;
+}
+#concent1 .price{
+	margin-top: 18px;
+	color: #e10482;
+	font-size:16px;
+	
+}
+#concent1 .price span{
+	font-size: 34px;
+	font-weight: 600;
+	margin-top: 4px;
+}
+#concent1 .price s{
+	color: #999999;
+	font-size: 14px;
+}
+#concent1 div{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #000033;
+	color: #fff;
+	position: absolute;
+	right: 18px;
+	bottom: -20px;
+	z-index: 2;
+	text-align: center;
+	line-height:20px ;
+	font-size: 14px;
+	padding: 9px;
+}
+#concent1 div:hover{
+	background: rgb(255,4,130);
+}
+#concent2{
+	width:1200px;
+	margin-left: 32px;
+}
+#concent2 dl{
+	width:385px;
+	margin: 20px 10px 20px 0;
+	float:left;
+	position: relative;
+    height: 424px;
+   box-shadow: 1px 1px 1px #ccc;
+   background: #fff;
+}
+#concent2 dl dt{
+	width:382px;
+	height: 240px;
+	text-align: center;
+	background: #fff;
+	border-bottom: #EEEEEE solid 1px;
+	position: relative;
+	
+}
+#concent2 dl dt p{
+	position: absolute;
+	left: 0;
+	top:0;
+	width:382px;
+	height: 240px;
+	background: #000000;
+	opacity: 0.3;
+
+	
+}
+#concent2 dl dt img{
+	width: 120px;
+	height: 200px;
+	margin-top: 20px;
+}
+#concent2 dl dd{
+	margin-left: 20px;
+	height: 170px;
+	background: #fff;
+	
+	
+}
+#concent2 dl dd h5{
+	width: 100%;
+	vertical-align: middle;
+	font-size: 12px;
+	margin: 10px 0;
+	font-weight: 100;
+	
+}
+
+#concent2 dl dd h5 span{
+	display: inline-block;
+	width: 27px;
+	height: 25px;
+	margin-right: 9px;
+	vertical-align: middle;
+}
+#concent2 dl dd h5 span img{
+	width: 100%;
+	vertical-align: middle;
+}
+#concent2 h3{
+	font-size: 20px;
+}
+#concent2 .price{
+	margin-top: 18px;
+	color: #e10482;
+	font-size:16px;
+	
+}
+#concent2 .price span{
+	font-size: 34px;
+	font-weight: 600;
+	margin-top: 4px;
+}
+#concent2 .price s{
+	color: #999999;
+	font-size: 14px;
+}
+#concent2 div{
+	width: 60px;
+	height: 24px;
+	border-radius: 7px;
+	background:#04e19b;
+	color: #fff;
+	position: absolute;
+	right: 18px;
+	bottom: 20px;
+	z-index: 2;
+	text-align: center;
+	line-height:20px ;
+	font-size: 14px;
+	padding: 9px;
+	opacity: 0.5;
+	
+}
+#concent2 div:hover{
+	opacity: 1;
+}
+#concent2 .timers{
+	font-size:12px;
+	width: 200px;
+	margin-top: 10px;
+}
+
+

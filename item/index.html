@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css"/>
+		<title></title>
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/common.js"></script>
+		<script src="js/commodity.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+		/*	$(function(){
+				$.ajax({
+				type:"GET",
+		  		url:"json/data.json",
+		  		async:true,
+		  		success:function(data){
+		  			var  nvarchar="";
+		  			var  nvarDivs=""
+		  			for(var i=0;i<data.length;i++){ 
+		  			    var htmlCon="";
+		  			    nvarchar += "<li><h3><img src='img/"+data[i].img+"'/><span>"+data[i].title+"</span></h3></li>"
+		  			    for(var j=0;j<data[i].child.length;j++){
+		  			    	var htmlConA="";
+		  			    	for(var k in data[i].child[j].goods){
+		  			    		htmlConA += "<a href='#'>" + data[i].child[j].goods[k] + "</a>"
+		  			    	}
+		  			    	htmlCon += "<li><h4><a href='#'>"+data[i].child[j].title+"</a></h4><p>"+
+		  			    	htmlConA + "</p></li>"
+		  			    }	
+		  			 nvarDivs+="<div>" +htmlCon +"<span><a href=''>"+data[i].check+"</a></span></div>"
+		  			}
+		  			$(".list ul").html(nvarchar)
+		  			$(".list").find(".mainList").html(nvarDivs);
+		  			var clicklock = true;
+		  			$(".sort").click(function(){
+		  				if(clicklock){
+		  					clicklock = false;
+		  					$(this).children("span").text("收起分类").end().children("img").attr("src", "img/icon14.png").end().find(".list").css("display", "block");
+		  					$(".mainList").find("div").eq(0).css("display","block");
+		  						$(".list ul li").find("li").eq(0).attr("class","active");
+		  					$(this).find("ul").find("li").mouseenter(function(){
+		  						var num=$(this).index();
+		  						$(".divs").eq(num).show().end().siblings().hide();
+		  					})
+						}else{
+							$(this).children("span").text("查看列表").end().children("img").attr("src", "img/icon.png").end().find(".list").css("display", "none");
+							clicklock = true;
+			
+						}
+				
+		  			})
+		  			$(".list ul li").mouseenter(function(){
+		  				
+		  				$(".list ul li").attr("class","");
+		  				$(".mainList").find("div").css("display","none");
+		  				$(this).attr("class","active");
+		  				$(".mainList").find("div").eq($(this).index()).css("display","block");
+		  			})
+		  			
+		  		}
+			})
+		})
+		  	*/				
+		</script>
+	</head>
+	<body>
+		
+			  <!--侧栏-->
+			<div id = "sidebar">
+				<div class = "sideTop">
+					<img src = "img/icon4.jpg" />
+					<a href = "">在线客服</a>
+					<div class = "sideTopChild">
+						<span> 联系客服 </span>
+						<p>时间：9:00 - 24:00</p>
+						<p>热线：900 - 5468 - 4365</p>
+					</div>
+				</div>
+				<div class = "sideCon">
+						<img src="img/icon5.png" />
+					<a href = "">购物袋</a>
+					  <b> 0 </b>
+				</div>
+				<div class = "sideFot">
+					<img src = "img/icon6.png" class="sideFotImg"/>
+					<div class = "sideFotChild">
+						我的收藏
+					</div>
+				</div>
+				<div class = "sideFot">
+					<img src = "img/icon7.png" class="sideFotImg"/>
+					<div class="sideFotChild">
+						我的优惠券
+					</div>
+				</div>
+				<div class = "sideFot fose">
+					<img src = "img/xewm.png" class="sideFotImg"/>
+					<div class="sideFotChild">
+						<p><img src="img/ewm.png"/></p>
+					</div>
+				</div>
+				<div id="sideFotLast">
+					<img src="img/icon10.png"/>
+					<span>TOP</span>
+					
+				</div>
+				
+		   </div>		
+		<!--头部-->
+			<div id="header">
+					<div class= "headTop">
+						<div class= "top_rig">
+					 		<a href= "#">我的订单</a>|<a href= "#">我的优惠券</a>|<a href= "#">我的收藏</a>|<a href = "#">帮助中心</a>
+					 	</div>
+					 	<div class= "top_le">
+					 		<a href= "#">登录</a>
+					 		<a href= "#">免费注册</a>
+					 		<a href= "#" class="topPhone">手机版</a>
+					 	</div>
+					</div>
+					<div class="headCon">
+						<img src="img/logo.png" />
+						<div class="search">
+							<input type="text" placeholder="搜索商品" class="conTxt"/>
+							<input type="button" value="搜索" class="conBtn" />
+							<p>
+								<a href="">面霜</a> |
+								<a href="">面膜</a> |
+								<a href="">洁面</a> |
+								<a href="">奶粉</a> |
+								<a href="">香氛</a> |
+								<a href="">面霜</a> |
+								<a href="">面膜</a> |
+								<a href="">洁面</a> |
+								<a href="">奶粉</a> |
+								<a href="">香氛</a>
+							</p>
+						</div>
+					</div>
+					<div class="headFot">
+						<ul class="nav">
+							<li class="lis"><a href="#">首页</a></li>
+							<li class="lis"><a href="#">全球特卖</a></li>
+							<li class="lis"><a href="#">韩流馆</a></li>
+						
+							<li class="sort"><img src="img/icon.png" /><span style="color: #fff;">查看分类</span>
+								<div class="list">
+									<ul class="ullist">
+										
+									</ul>
+									<div class="mainList">
+										
+									</div>
+									
+								</div>
+							
+							</li>
+						</ul>
+					</div>
+			</div>
+			<!--banner图-->
+			<div id="banner">
+				<div class="banner">
+
+
+					<ul class="sub">
+						<li class="act"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="pic">
+						<li><img src="img/banner.jpg" alt="" /></li>
+						<li><img src="img/banner2.jpg" alt="" /></li>
+						<li><img src="img/banner3.jpg" alt="" /></li>
+						<li><img src="img/banner4.jpg" alt="" /></li>
+						<li><img src="img/banner.jpg" alt="" /></li>
+					</ul>
+					<p class="banLeft"> < </p>
+					<p class="banRight"> > </p>
+				</div>
+		
+		    </div>
+		    <!--官方授权-->
+		    <div id="grid">
+		    	<div class="gridTop">
+		    		<dl><dt><img src="img/tp.png"</dt><dd><h3>官方授权</h3><p>Official author</p></dd></dl>
+					<dl><dt><img src="img/tp.png"</dt><dd><h3>官方授权</h3><p>Official author</p></dd></dl>
+					<dl><dt><img src="img/tp.png"</dt><dd><h3>官方授权</h3><p>Official author</p></dd></dl>
+					<dl><dt><img src="img/tp.png"</dt><dd><h3>官方授权</h3><p>Official authori </p></dd></dl>
+		    	</div>
+		    	<div class="gridCon">
+		    	    <ul>
+			    		<li><img src="img/pic4.png" /></li>
+			    		<li><img src="img/pic3.png" /></li>
+			    		<li><img src="img/pic.png" /></li>
+			    		<li><img src="img/pic2.png" /></li>
+		    	    </ul>
+			    		<div><img src="img/pic10.png" class="pc10" /></div>
+		    	</div>
+		    </div>
+		    <!--商品列表-->
+		    <div id="commodity">
+		    	<div id="commoTop">
+		    		
+		    	</div>
+		    	<div id="commoTag">
+		    		<img src="img/pic23.png" class="pc10"/>
+		    	</div>
+		    	<div id="commoCon">
+		    		
+		    	</div>
+		    	<div id="commoFot">
+	    			<div class="comLeft">
+	    				<h2>全球特卖 <span>源头采购 免税直达</span><a href="">查看更多&gt;</a></h2>
+	    			</div>
+		    		<div class="comRight">
+		    			<h3><span>&nbsp;&nbsp;热销品牌&nbsp;&nbsp;</span></h3>
+		    			<ul>
+		    				
+		    			</ul>
+		    				<h3><span>&nbsp;&nbsp;精选专题&nbsp;&nbsp;</span></h3>
+		    			<div class="sunImg">
+		    				
+		    			</div>
+			    	</div>
+		    	</div>	
+		    </div>
+		    <div id="fotter">
+		    	<div class="fotTop">
+		    		<dl class="dlspe">
+		    			<dt>手机嗨购全球</dt>
+		    			<dd><img src="img/ewm.png"</dd>
+		    		</dl>
+		    	</div>
+		    	<div class="fotCon">
+		    		
+		    		<p>
+		    			<a href="">公司简介</a>
+		    			<a href="">公司简介</a>
+		    			<a href="">公司简介</a>
+		    			<a href="">公司简介</a>
+		    			<a href="">公司简介</a>
+		    			<a href="">公司简介</a>
+		    			<a href="">公司简介</a>
+		    			<a href="">公司简介</a>
+		    		</p>	
+		    		<span><img src="img/icon9.png">4008-006-006</span>
+		    	</div>
+		    	<div class="fotLast">
+		    		<p>copjhfb@2010-2016,版权所有huigofg 湘CP备dsg46778号</p>
+		    		<div class="last">
+		    			<img src="img/ft3.png" alt="" />
+						<img src="img/ft4.png" alt="" />
+						<img src="img/ft5.png" alt="" />
+						<img src="img/ft2.png" alt="" />
+						<img class="limg" src="img/ft.png" alt="" />
+		    		</div>
+					    	
+		    	</div>
+		    	
+		    </div>
+			
+		
+	        
+	</body>
+				
+</html>
+
